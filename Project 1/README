@@ -1,0 +1,18 @@
+This project and powershell script was created to make ease-of-use scripts that can improve day to day operations in an IT setting.
+In this example, someone who manages servers can run this script when something unusual happens, as a daily check, or to solve issues with certain machines.
+This can be useful and cut time manually going in and checking the online status of every machine if you have more than one or two.
+
+This script will fetch a file located on your hard drive (location is your choice) and it will read the textfile. The text file holds 1 IP address per line and you can insert your machines IP's here.
+I have included it for reference in this respository however it should look like this:
+ 192.168.1.2
+ 192.168.6.5
+ 192.168.5.3
+ 192.168.5.4
+ 
+ You can run this script through Powershell, most prefferably Powershell IDE so you can ensure everything is properly set and adjusted for your system and addresses.
+ 
+ Once you run the script, it pings all of the IP's in the specified textfile to see if they are currently online. The script will output each device's IP, and say "Server is currently [ UP ] or [ DOWN ]. These terms were used rather than Online or Offline as they can be easily distinguished.
+ 
+ Overall, it's minimal in terms of resources it pulls, and can produce quick and important information in the case it's needed. If this project were to continue, I would surely seek to include more information variables such as last offline date/time, email notifications when a machine goes down, or how long a machine has been online.
+
+- Hunter Coffland
