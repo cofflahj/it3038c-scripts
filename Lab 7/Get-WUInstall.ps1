@@ -1,0 +1,1 @@
+﻿Get-WUInstall -KBArticleID KB4489883,KB4489883 -AcceptAll
