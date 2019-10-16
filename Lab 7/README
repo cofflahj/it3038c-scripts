@@ -3,6 +3,7 @@
 
 # Here is how you can run a Powershell script that I created, which uses a plugin called PSWindowsUpdate. To install this plugin to your system, first do the following:
 # This script can be used to manage your windows update files and installs on your device or amongst mulitple devices on a network if you choose to do so. However, in the instances below it will only take actions on your own device.
+# All scripts have been individually included within the Lab 7 repository.
 
 Install-Module -Name PSWindowsUpdate
 
