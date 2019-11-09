@@ -1,0 +1,29 @@
+This project and scripts were created based off my previous project script. This isn't an addition to the previous script however they have similar uses and work well together if you are seeking to ping devices or IP addresses.
+In this example, you can use this LAN Sweeper to view which IP addresses are currently being used on your subnet. This can help if you're looking for free addresses to statically assign devices or to just simply see how many of your addresses are being used.
+This works as a free version of what software companies might charge you to download and use for the same thing. 
+
+This second project was created to make ease-of-use scripts that can improve day to day operations in an IT setting.
+In this example, a network administrator can use this tool to check availability and better manage his DHCP clients and end computers. If you have DHCP and Active Directory services enabled, you can modify this script to display IP's and Computer Names.
+
+In this script, all you need to do in terms of modiciation is edit the IP address range and to include the "$_" in the address blocks you want to search all active IP addresses within.
+
+1..255 | % {echo "192.168.33.$_"; ping -n 1 -w 100 192.168.33.$_} | Select-String ttl
+                          ^^^^^                           ^^^^^
+                          
+               * * You MUST ensure that both ip addresses match and that you're within your own subnet for this to work! * *
+                          
+__ Script broken down... __
+
+1..255 - Shows the list within this range of numbers. You can edit this to only display a certain range of end address numbers.
+% - Starts the loop to do it all over again for each address
+echo - basic print function. So the first ip address if just for the print function. The next one is the actual ping.
+ping - Basic ping to see if an ip address is currently in use. You can use my previous script to see which ones from the list of (your) addresses in the subnet are up or down, online or offline. 
+192,168.33.$_ - I have modified the 33 so it is under my subnet. If you don't set it custom to your subnet it will not work.
+                          
+ You should run this script through Powershell, most prefferably Powershell IDE so you can ensure everything is properly set and adjusted for your system and addresses.
+  
+ Overall, it's extremely  minimal in terms of code however it pulls quick and important information in the case it's needed, especially if you don't want to buy software that will do it.
+ 
+ If I were to continue this project even further, I would surely look to implement Active Directory and DHCP together to display actual device names along with the addresses. This would help so much more as it can specifically identify a device by it's name thus making trackdown for it much easier.
+
+- Hunter Coffland
