@@ -1,0 +1,31 @@
+Name	Type	Description	
+Administrator	User	Built-in account for administering the computer/domain	
+DefaultAccount	User	A user account managed by the system.	
+Guest	User	Built-in account for guest access to the computer/domain	
+Mike Smith	User		
+Sally Frost	User		
+Kevin Gates	User		
+Gabe Phillips	User		
+Spencer Cheek	User		
+Holly Beavers	User		
+Hunter Coffland	User		
+Enterprise Admins	Security Group - Universal	Designated administrators of the enterprise	
+Enterprise Key Admins	Security Group - Universal	Members of this group can perform administrative actions on key objects within the forest.	
+Enterprise Read-only Domain Controllers	Security Group - Universal	Members of this group are Read-Only Domain Controllers in the enterprise	
+Schema Admins	Security Group - Universal	Designated administrators of the schema	
+Cloneable Domain Controllers	Security Group - Global	Members of this group that are domain controllers may be cloned.	
+DnsUpdateProxy	Security Group - Global	DNS clients who are permitted to perform dynamic updates on behalf of some other clients (such as DHCP servers).	
+Domain Admins	Security Group - Global	Designated administrators of the domain	
+Domain Computers	Security Group - Global	All workstations and servers joined to the domain	
+Domain Controllers	Security Group - Global	All domain controllers in the domain	
+Domain Guests	Security Group - Global	All domain guests	
+Domain Users	Security Group - Global	All domain users	
+Group Policy Creator Owners	Security Group - Global	Members in this group can modify group policy for the domain	
+Key Admins	Security Group - Global	Members of this group can perform administrative actions on key objects within the domain.	
+Protected Users	Security Group - Global	Members of this group are afforded additional protections against authentication security threats. See http://go.microsoft.com/fwlink/?LinkId=298939 for more information.	
+Read-only Domain Controllers	Security Group - Global	Members of this group are Read-Only Domain Controllers in the domain	
+Allowed RODC Password Replication Group	Security Group - Domain Local	Members in this group can have their passwords replicated to all read-only domain controllers in the domain	
+Cert Publishers	Security Group - Domain Local	Members of this group are permitted to publish certificates to the directory	
+Denied RODC Password Replication Group	Security Group - Domain Local	Members in this group cannot have their passwords replicated to any read-only domain controllers in the domain	
+DnsAdmins	Security Group - Domain Local	DNS Administrators Group	
+RAS and IAS Servers	Security Group - Domain Local	Servers in this group can access remote access properties of users	
